@@ -1,0 +1,11 @@
+{
+  "name": "1c-rozn",
+  "scripts": {
+    "start": "node app/Server.js",
+    "dev": "nodemon app/Server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.1",
+    "nodemon": "^3.1.7"
+  }
+}

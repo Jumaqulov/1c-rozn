@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy', sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 28px 0;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+}
+
+nav .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .nav-left a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+nav .nav-left a img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+nav .nav-left a span {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 33px;
+    color: rgba(44, 43, 53, 1);
+}
+
+nav .nav-right ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 51px;
+}
+
+nav .nav-right #menu_btn {
+    display: none;
+}
+
+nav .nav-right ul li a {
+    display: block;
+    text-decoration: none;
+    color: rgba(44, 43, 53, 1);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    transition: 0.3s;
+}
+
+nav .nav-right ul li a:hover {
+    color: rgba(67, 165, 72, 1);
+    transition: 0.3s;
+}
+
+nav .nav-right ul li button {
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    padding: 10px 20px;
+    border-radius: 1000px;
+    color: rgb(247, 248, 248);
+    font-weight: 600;
+    font-size: 14px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+nav .nav-right ul li button:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(67, 165, 72, 0.4);
+}
+
+@media(max-width:900px) {
+    nav {
+        padding: 34px 20px;
+        position: sticky;
+        top: 0;
+        z-index: 15;
+    }
+
+    nav .nav-right ul {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transition: 0.5s;
+        transform: translateY(-200px);
+        width: 100%;
+        height: fit-content;
+        background: rgb(0, 200, 255);
+        display: block;
+        text-align: center;
+        padding: 20px 0;
+        z-index: 1;
+    }
+
+    nav .nav-right ul li {
+        margin: 0 0 15px 0;
+    }
+
+    nav .nav-right ul.open {
+        transform: translateY(180.2px);
+        transition: 0.5s;
+    }
+
+    nav .nav-right #menu_btn {
+        display: block;
+        border: none;
+        background: none;
+        font-size: 24px;
+    }
+}
+
+/* INTRODUCTION SECTION */
+
+.intro_section .wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
