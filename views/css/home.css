@@ -1,7 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Gilroy', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root {
+    --primary-color: rgba(44, 43, 53, 1);
+    --text-color-1: rgba(111, 121, 115, 1);
+    --link-color-1: rgba(67, 165, 72, 1);
+    --color-white: rgba(255, 255, 255, 1);
 }
 
 .wrapper {
@@ -37,7 +46,7 @@ nav .nav-left a span {
     font-weight: 600;
     font-size: 24px;
     line-height: 33px;
-    color: rgba(44, 43, 53, 1);
+    color: var(--primary-color);
 }
 
 nav .nav-right ul {
@@ -54,7 +63,7 @@ nav .nav-right #menu_btn {
 nav .nav-right ul li a {
     display: block;
     text-decoration: none;
-    color: rgba(44, 43, 53, 1);
+    color: var(--primary-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -128,8 +137,214 @@ nav .nav-right ul li button:hover {
 
 /* INTRODUCTION SECTION */
 
-.intro_section .wrapper{
+.intro_section {
+    padding: 55px 0 60px;
+}
+
+.intro_section .wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.intro_section .intro-left,
+.intro_section .intro-right {
+    width: 40%;
+}
+
+.intro_section .intro-left h1 {
+    color: var(--primary-color);
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.intro_section .intro-left p {
+    margin: 20px 0 30px;
+    font-weight: 400;
+    font-size: 20px;
+    list-style: 27px;
+    color: var(--primary-color);
+}
+
+.intro_section .intro-left button {
+    background: rgba(67, 165, 72, 1);
+    border: 1px solid transparent;
+    cursor: pointer;
+    border-radius: 1000px;
+    padding: 10px 30px;
+    color: rgba(247, 248, 248, 1);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    transition: 0.3s;
+}
+
+.intro_section .intro-left button:hover {
+    transition: 0.3s;
+    color: rgba(67, 165, 72, 1);
+    border: 1px solid rgba(67, 165, 72, 1);
+    background: rgba(247, 248, 248, 1);
+}
+
+.intro_section .intro-right img {
+    width: 100%;
+}
+
+@media(max-width:900px) {
+    .intro_section {
+        padding: 32px 20px 20px;
+    }
+
+    .intro_section .wrapper {
+        display: block;
+    }
+
+    .intro_section .intro-left,
+    .intro_section .intro-right {
+        width: 100%;
+    }
+
+    .intro_section .intro-right {
+        margin-top: 20px;
+    }
+
+    .intro_section .intro-left h1 {
+        font-size: 30px;
+        font-weight: 600;
+    }
+
+    .intro_section .intro-left p {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 16px;
+    }
+}
+
+/* INTROBOX SECTION */
+
+.introbox_section {
+    background: #F7F8F8;
+    padding: 60px 0;
+}
+
+.introbox_section img {
+    width: 100%;
+}
+
+.introbox_section .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.introbox_section .intro50box,
+.introbox_section .intro40box {
+    background: var(--color-white);
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.introbox_section .intro50box {
+    width: calc(50% - 100px);
+}
+
+.introbox_section .intro40box {
+    width: calc(100% / 3 - 100px);
+}
+
+.introbox_section h4 {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 24px;
+    line-height: 33px;
+    font-weight: 600;
+}
+
+.introbox_section p {
+    color: var(--text-color-1);
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    margin: 14px 0 32px;
+}
+
+.introbox_section a {
+    text-decoration: none;
+    color: var(--link-color-1);
+    border: 1px solid var(--link-color-1);
+    padding: 10px 30px;
+    border-radius: 1000px;
+    transition: 0.3s;
+}
+
+.introbox_section a:hover {
+    transition: 0.3s;
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    color: var(--color-white);
+}
+
+.introbox_section .intro100box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: calc(100% - 80px);
+    border-radius: 40px;
+    padding: 32px;
+    background: linear-gradient(252.7deg, #EBF5EB 17.34%, #EFFBF0 90.57%);
+}
+
+.introbox_section .intro100box div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.introbox_section .intro100box div span {
+    color: var(--link-color-1);
+    font-weight: 500;
+    font-size: 20px;
+    line-break: 27px;
+}
+
+.introbox_section .intro100box div button {
+    border-radius: 1000px;
+    padding: 10px 30px;
+    background: var(--link-color-1);
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    color: var(--color-white);
+    font-size: 16px;
+    line-height: 22px;
+    transition: 0.4s;
+}
+
+.introbox_section .intro100box div button:hover {
+    background: linear-gradient(100.98deg, #43A548 -4.14%, #52E259 108.69%);
+    transition: 0.4s;
+}
+
+.introbox_section .intro100box img {
+    width: 40px;
+    height: 40px;
+}
+
+@media(max-width:900px) {
+    .introbox_section .wrapper {
+        display: block;
+    }
+
+    .introbox_section .intro50box,
+    .introbox_section .intro40box,
+    .introbox_section .intro100box {
+        width: 100%;
+    }
+
+    .intro100box {
+        display: block !important;
+    }
+
+    .intro100box div {
+        margin: 10px 0;
+    }
 }
