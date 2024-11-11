@@ -11,6 +11,7 @@
     --text-color-1: rgba(111, 121, 115, 1);
     --link-color-1: rgba(67, 165, 72, 1);
     --color-white: rgba(255, 255, 255, 1);
+    --backround-color: #F7F8F8;
 }
 
 .wrapper {
@@ -98,6 +99,7 @@ nav .nav-right ul li button:hover {
         position: sticky;
         top: 0;
         z-index: 15;
+        background: var(--backround-color);
     }
 
     nav .nav-right ul {
@@ -222,7 +224,7 @@ nav .nav-right ul li button:hover {
 /* INTROBOX SECTION */
 
 .introbox_section {
-    background: #F7F8F8;
+    background: var(--backround-color);
     padding: 60px 0;
 }
 
@@ -330,6 +332,10 @@ nav .nav-right ul li button:hover {
 }
 
 @media(max-width:900px) {
+    .introbox_section {
+        padding: 20px;
+    }
+
     .introbox_section .wrapper {
         display: block;
     }
@@ -337,7 +343,8 @@ nav .nav-right ul li button:hover {
     .introbox_section .intro50box,
     .introbox_section .intro40box,
     .introbox_section .intro100box {
-        width: 100%;
+        margin: 10px 0;
+        width: auto;
     }
 
     .intro100box {
@@ -346,5 +353,84 @@ nav .nav-right ul li button:hover {
 
     .intro100box div {
         margin: 10px 0;
+    }
+}
+
+/* COMFORTS COMPARE SECTION */
+
+.comforts_section {
+    padding: 59px 0 159px 0;
+    background: var(--backround-color);
+}
+
+.comforts_section h3 {
+    font-weight: 600;
+    font-size: 28px;
+    color: var(--primary-color);
+    line-height: 39px;
+    margin-bottom: 60px;
+}
+
+.comforts_section .compare-box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.comforts_section .compare-left {
+    background: var(--color-white);
+}
+
+.comforts_section .compare-right {
+    background: linear-gradient(252.7deg, #E5F6E6 17.34%, #DFF7E0 90.57%);
+}
+
+.comforts_section .compare-left,
+.comforts_section .compare-right {
+    padding: 40px;
+    border-radius: 40px;
+}
+
+.comforts_section .compare-left h4,
+.comforts_section .compare-right h4 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 33px;
+    margin-bottom: 40px;
+}
+
+.comforts_section .compare-left ul,
+.comforts_section .compare-right ul {
+    list-style-type: none;
+}
+
+.comforts_section .compare-left ul li,
+.comforts_section .compare-right ul li {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin: 0 0 20px 0;
+}
+
+.comforts_section .compare-left ul li span:last-child,
+.comforts_section .compare-right ul li span:last-child {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 27px;
+    color: rgba(61, 70, 65, 1);
+}
+
+@media(max-width:900px) {
+    .comforts_section {
+        padding: 20px;
+    }
+    
+    .comforts_section .compare-box {
+        display: block;
+    }
+
+    .comforts_section .compare-left {
+        margin-bottom: 10px;
     }
 }
