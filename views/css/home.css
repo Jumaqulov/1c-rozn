@@ -425,7 +425,7 @@ nav .nav-right ul li button:hover {
     .comforts_section {
         padding: 20px;
     }
-    
+
     .comforts_section .compare-box {
         display: block;
     }
@@ -433,4 +433,86 @@ nav .nav-right ul li button:hover {
     .comforts_section .compare-left {
         margin-bottom: 10px;
     }
+}
+
+/* COMFORTABLE PRODUCT SECTION */
+
+.comfort_products_section {
+    background: linear-gradient(252.7deg, #EBF5EB 17.34%, #EFFBF0 90.57%);
+    padding: 60px 0;
+}
+
+.comfort_products_section .subheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.comfort_products_section .subheader h3 {
+    color: var(--primary-color);
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 39.03px;
+}
+
+.comfort_products_section .subheader a {
+    text-decoration: none;
+    background: var(--link-color-1);
+    padding: 12px 30px;
+    border-radius: 1000px;
+    color: rgba(247, 248, 248, 1);
+    transition: 0.3s;
+}
+
+.comfort_products_section .subheader a:hover {
+    transition: 0.3s;
+    box-shadow: 0 4px 10px rgba(67, 165, 72, 0.4);
+}
+
+.comfort_products_section .carousel .slick-slide {
+    margin: 0 10px;
+}
+
+.comfort_products_section .carousel-card {
+    box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.05);
+    padding: 40px;
+    border-radius: 40px;
+    background: var(--backround-color);
+}
+
+.comfort_products_section .carousel-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.comfort_products_section .carousel-card-top h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 27.88px;
+    color: var(--primary-color);
+}
+
+.comfort_products_section .carousel-card-top span {
+    border: 1px solid var(--link-color-1);
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19.51px;
+    color: var(--link-color-1);
+}
+
+
+.comfort_products_section ul {
+    padding-left: 15px;
+}
+
+.comfort_products_section ul li {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 19.51px;
+    color: rgba(131, 134, 132, 1);
 }
