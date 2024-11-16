@@ -17,11 +17,9 @@ $(document).ready(function () {
         dots: false,
         arrows: true,
         infinite: true,
-        speed: 300,
+        speed: 500,
         slidesToShow: 3,
-        slidesToScroll: 2,
-        prevArrow: '<button class="slick-prev"><i class="ri-arrow-left-s-line"></i></button>',
-        nextArrow: '<button class="slick-next"><i class="ri-arrow-right-s-line"></i></button>',
+        slidesToScroll: 1,
         responsive: [
             {
                 breakpoint: 1024,
@@ -38,6 +36,8 @@ $(document).ready(function () {
                     slidesToScroll: 2,
                     dots:true,
                     arrows:false,
+                    sweapble:true,
+                    swipe: true, 
                 }
             },
             {
@@ -47,6 +47,8 @@ $(document).ready(function () {
                     slidesToScroll: 1,
                     dots:true,
                     arrows:false,
+                    sweapble:true,
+                    swipe: true, 
                 }
             }
         ]
