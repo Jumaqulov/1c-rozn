@@ -34,10 +34,10 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
-                    dots:true,
-                    arrows:false,
-                    sweapble:true,
-                    swipe: true, 
+                    dots: true,
+                    arrows: false,
+                    sweapble: true,
+                    swipe: true,
                 }
             },
             {
@@ -45,12 +45,33 @@ $(document).ready(function () {
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    dots:true,
-                    arrows:false,
-                    sweapble:true,
-                    swipe: true, 
+                    dots: true,
+                    arrows: false,
+                    sweapble: true,
+                    swipe: true,
                 }
             }
         ]
     });
 });
+
+// Toogle answer for question
+
+function toggleAnswer(questionId, answerId) {
+    const question = document.getElementById(questionId);
+    const answer = document.getElementById(answerId);
+
+    question.addEventListener('click', () => {
+        const icon = question.querySelector('i');
+        icon.classList.toggle('ri-arrow-down-s-line');
+        icon.classList.toggle('ri-arrow-up-s-line');
+        answer.classList.toggle('d-block');
+    });
+}
+
+toggleAnswer('questions1', 'answer1');
+toggleAnswer('questions2', 'answer2');
+toggleAnswer('questions3', 'answer3');
+toggleAnswer('questions4', 'answer4');
+toggleAnswer('questions5', 'answer5');
+toggleAnswer('questions6', 'answer6');
